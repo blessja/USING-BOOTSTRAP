@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="navbar-top row align-items-center">
+            <!-- navbar -->
+            <div class="col-lg-4 temp-day d-none d-lg-block">
+                <div id="temperature"><img src="https://g.newsweek.com/img/weather/28.png" alt="Mostly Cloudy" class="weather-icon" width="24" height="24">5° De Doorns, SA ></div>
+                Sat, Dec 26, 2020
+            </div>
+            <div class="col-lg-4 col-6 text-lg-center">
+                <div class="main-title-lg d-none d-lg-block">
+                    Newsweek
+                </div>
+                <div class="main-title-md d-block d-lg-none">
+                    Newsweek
+                </div>
+            </div>
+            <div class="col-lg-4 login-sub col-6 text-lg-end d-flex justify-content-end">
+                <div id="login-btn">LOGIN</div>
+                <span><button id = "sub-btn">SUBSCRIBE ></button></span>
+                <div class="burger-menu d-block d-lg-none">
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-bot row d-none d-lg-block ">
+            <div>
+                <ul class="d-flex justify-content-around top-list">
+                    <li class="no-border list-item orange-hover">U.S.</li>
+                    <li class="list-item orange-hover">World</li>
+                    <li class="list-item orange-hover">Business</li>
+                    <li class="list-item orange-hover">Tech & Science</li>
+                    <li class="list-item orange-hover">Culture</li>
+                    <li class="list-item orange-hover">Newsgeek</li>
+                    <li class="list-item orange-hover">Sports</li>
+                    <li class="list-item orange-hover">Health</li>
+                    <li class="list-item orange-hover">The Debate</li>
+                    <li class="list-item orange-hover">Vantage</li>
+                    <li class="list-item orange-hover">Weather</li>
+                    <span class="search-bar">
+                    Search
+                    <img id = "search-icon" src = "https://g.newsweek.com/www/images/icon-search-glass.svg">
+                  </span>
+                </ul>
+            </div>
+            <hr>
+            <div>
+                <ul class="bot-list d-flex justify-content-between">
+                    <li class="nav-item">TRENDING</li>
+                    <li class="nav-item grey orange-hover">JOE BIDEN</li>
+                    <li class="nav-item grey orange-hover">DONALD TRUMP</li>
+                    <li class="nav-item grey orange-hover">CORONAVIRUS</li>
+                    <li class="nav-item grey orange-hover">STIMULUS PACKAGE</li>
+                    <li class="nav-item grey orange-hover">VACCINE</li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+        <div class="stories row">
+            <!-- stories -->
+            <div class="col-lg-3 col-md-6">
+                <div class="big-article-title grey bold">FEATURED STORIES</div>
+                <div class="big-article article-margin">
+                    <img class="big-article-img" src="https://d.newsweek.com/en/full/1693367/trump-melania.webp?w=397&h=265&q=90&f=efae78faa80d91222402cc0f52fbd069">
+                    <div class="picture-info bold orange-underline">Republican Senators Divided Over Trump's Call for $2,000 Stimulus Checks<br></div>
+                    <div class="big-article-info">Senator Lindsey Graham called Trump's demand for $2,000 stimulus checks "reasonable," and urged Congress to listen.</div>
+                    <hr>
+                    <div class="big-article-info bold orange-underline">Trump Must Sign Stimulus Bill Today to Prevent One-Week Lapse in Benefits</div>
+                    <hr>
+                </div>
+                <div class="big-article">
+                    <img class="big-article-img" src="https://d.newsweek.com/en/full/1693355/loeffler-perdue.webp?w=397&h=265&q=90&f=638d00d65907ee746207ec51f67efb3d">
+                    <div class="picture-info bold orange-underline">Pro-Trump Lawyer Suggests Arresting Loeffler, Perdue<br></div>
+                    <div class="big-article-info">Lin Wood outlined a plan to boycott Georgia's upcoming Senate runoff race, and hinted at arresting GOP Senators Kelly Loeffler and David Perdue.</div>
+                </div>
+                <div class="big-article">
+                    <img class="big-article-img article-margin" src="https://d.newsweek.com/en/full/1675257/rep-paul-gosar.webp?w=397&h=265&q=90&f=1442de0a21eb04119235e30648cc2633">
+                    <div class="picture-info bold orange-underline">GOP Lawmaker Asks Trump to Pardon Ex-Congressman, Calls DOJ 'Corrupt'<br></div>
+                    <div class="big-article-info">Arizona Representative Paul Gosar said Rick Renzi was "convicted by corrupt DOJ prosecutors who fabricated evidence."</div>
+                </div>
+                <div class="big-article">
+                    <img class="big-article-img article-margin" src="https://d.newsweek.com/en/full/1693352/japan-nurse-covid-19-test-vehicle.webp?w=397&h=265&q=90&f=a926692f8ba682fa5f5cf74db8dc26c5">
+                    <div class="picture-info bold orange-underline">China, Japan Increase 'Stay Put' Orders, S. Korea Sees Largest Case Spike<br></div>
+                    <div class="big-article-info">South Korea, a country previously touted for curbing the coronavirus pandemic early on, recorded its largest case increase on Christmas Day.</div>
+                </div>
+                <div class="big-article">
+                    <img class="big-article-img article-margin" src="https://d.newsweek.com/en/full/1692809/love-marriage-israeli-iranian.jpg?w=397&h=265&q=90&f=c52e97c8e85f038728e48b0064f53b8f">
+                    <div class="picture-info bold orange-underline">Five Amazing Love Stories from 2020<br></div>
+                    <div class="big-article-info">This year has shown that our ability to love, even in the most extraordinary of circumstances, remains unchanged.</div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="big-article-title grey bold">TOP STORY</div>
+                <div class="big-article article-margin">
+                    <img class="big-article-img" src="https://d.newsweek.com/en/full/1693350/nashville-explosion.webp?w=591&h=364&f=0aeda9abd3ec56c09a1823f2f2addb1f">
+                    <div class="picture-info bold orange-underline">Who Is Anthony Quinn Warner? Suspect in Nashville Blast ID'd<br></div>
+                    <div class="big-article-info">Warner was born in January 1957 and is 63 years old, according to a LexisNexis report obtained by Newsweek.</div>
+                    <hr>
+                    <img class="big-article-img float-left float-img" src="https://d.newsweek.com/en/full/1693350/nashville-explosion.webp?w=95&h=95&f=a5ed98145f145255d686c57b29fdb947">
+                    <div class="big-article-info bold orange-underline">Warner was born in January 1957 and is 63 years old, according to a LexisNexis report obtained by Newsweek.</div>
+                    <div class="big-article-info">The incident would likely be a suicide bombing if the DNA of the suspect's mother is determined to be linked to remains found in the RV, one law enforcement official said.</div>
+                    <hr class="clear">
+                </div>
+                <div class="big-article-title grey bold">MY TURN</div>
+                <div class="flex-container d-flex justify-content-around">
+                    <div class="flex-item">
+                        <img class="small-img" src="https://d.newsweek.com/en/full/1691415/santa-christmas-beards.jpg?w=397&h=397&f=b77abb20649de01b108b2b4a83571e46">
+                        <div class="small-font grey bold">'I'm A Real Life Santa'</div>
+                    </div>
+                    <div class="flex-item">
+                        <img class="small-img" src="https://d.newsweek.com/en/full/1691411/christmas-kids-family-parenting.jpg?w=397&h=397&f=72d55eaf795e2bb203e25c004280db85">
+                        <div class="small-font grey bold">'I Spent Christmas With My Ex-Husband and His New Wife'</div>
+                    </div>
+                    <div class="flex-item">
+                        <img class="small-img" src="https://d.newsweek.com/en/full/1690884/tiny-house-tiny-home-christmas.jpg?w=397&h=397&f=baa6fd8b544f8e50abad35163203abda">
+                        <div class="small-font grey bold">'We Celebrate Christmas In a Tiny House'</div>
+                    </div>
+                </div>
+                <div class="big-article-title grey bold">CULTURES & TRAVEL</div>
+                <div class="flex-container d-flex justify-content-around">
+                    <div class="flex-item">
+                        <img class="small-img" src="https://d.newsweek.com/en/full/1691476/eco-camp-patagonia.webp?w=397&h=397&f=ff8ccdc0aafcb5f9d90aa0a29c03c7c0">
+                        <div class="small-font grey bold">Where We Are Dreaming<br> of Traveling in 2021</div>
+                    </div>
+                    <div class="flex-item">
+                        <img class="small-img" src="https://d.newsweek.com/en/full/1689116/stonehenge.webp?w=397&h=397&f=99a9f46ecb3e656eacc48fbf7d689f52">
+                        <div class="small-font grey bold">Here Comes the Sun: Winter Solstice Celebrations Around the World</div>
+                    </div>
+                    <div class="flex-item">
+                        <img class="small-img" src="https://d.newsweek.com/en/full/1689209/mistakes-100-worst-movies-all-time.webp?w=397&h=397&f=b03f60105e6b3fbdae949f6acdc1ddec">
+                        <div class="small-font grey bold">Mistakes From the 100 Worst Movies of All Time</div>
+                    </div>
+                </div>
+                <div class="big-article-title grey bold">MORE STORIES</div>
+                <hr>
+                <div>
+                    <img class="big-article-img float-left float-img fix-margins" src="https://d.newsweek.com/en/full/1693359/donald-trump-white-house-covid-relief.webp?w=95&h=95&f=91c7f1fad1d006644de6f11a85a69fe3">
+                    <div class="big-article-info bold orange-underline">Biden Calls Out Trump for Not Yet Signing COVID Relief Bill</div>
+                    <div class="big-article-info">The president-elect warned about the possibilities of unemployment benefits expiring as well as the economic impact that blocking the bill could have for small businesses.</div>
+                    <hr class="clear">
+                </div>
+                <div>
+                    <img class="big-article-img float-left float-img fix-margins" src="https://d.newsweek.com/en/full/1604767/bill-lee.webp?w=95&h=95&f=52c666550664b405f5ef96b81511b2f3">
+                    <div class="big-article-info bold orange-underline">TN Gov. Asks Trump for Emergency Declaration Following Nashville Explosion</div>
+                    <div class="big-article-info">Nashville Mayor John Cooper had issued a state of civil emergency on Friday after a vehicle explosion in downtown Nashville.</div>
+                    <hr class="clear">
+                </div>
+                <div>
+                    <img class="big-article-img float-left float-img fix-margins" src="https://d.newsweek.com/en/full/1693343/donald-trump-covid-vaccine-summit-voter-fraud.webp?w=95&h=95&f=4198e3e03b740753a28a2129832eb2cc">
+                    <div class="big-article-info bold orange-underline">Trump Attacks FBI, DOJ, Supreme Court and GOP Senators in Twitter Tirade</div>
+                    <div class="big-article-info">In a series of tweets Saturday, the president attacked a variety of people and departments for not backing his voter fraud claims.</div>
+                    <hr class="clear">
+                </div>
+                <div>
+                    <img class="big-article-img float-left float-img fix-margins" src="https://d.newsweek.com/en/full/1693350/nashville-explosion.webp?w=95&h=95&f=a5ed98145f145255d686c57b29fdb947">
+                    <div class="big-article-info bold orange-underline">Nashville Mayor Calls 2020 City's Hardest Year After Multiple Disasters</div>
+                    <div class="big-article-info">"One more event in Nashville's 2020," Mayor John Cooper told reporters on Friday following a vehicle explosion in downtown Nashville.</div>
+                    <hr class="clear">
+                </div>
+                <div>
+                    <img class="big-article-img float-left float-img fix-margins" src="https://d.newsweek.com/en/full/1693336/chris-christie-donald-trump-2024.webp?w=95&h=95&f=61c62e70a8ba463f6ae75db7e0468b86">
+                    <div class="big-article-info bold orange-underline">Trump Responds to Chris Christie Saying He Won't Not Rule Out 2024 Run</div>
+                    <div class="big-article-info">The former New Jersey governor also said he's doubtful the president will attend Joe Biden's inauguration.</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="big-article-title grey bold">THE DEBATE</div>
+                <hr class="thick">
+                <div>
+                    <div>
+                        <img class="big-article-img float-left float-img fix-margins" src="https://d.newsweek.com/en/full/1690552/batya-ungar-sargon.png?w=63&h=63&f=a07f2e643c9b034ba28741884304261c">
+                        <div class="big-article-info bold font-inc orange-underline">Democrats and Liberals Must Get Back To Economic Basics</div>
+                        <div class="big-article-info grey bold font-inc">BY BATYA UNGAR-SARGON</div>
+                    </div>
+                    <div class="clear vs">
+                        VS
+                    </div>
+                    <div>
+                        <img class="big-article-img float-right float-img fix-margins" src="https://d.newsweek.com/en/full/1690636/issac-bailey.png?w=63&h=63&f=d9378ffb8d8926c6efbd0cadd59a501d">
+                        <div class="big-article-info bold font-inc orange-underline">Democrats Must Emphasize Boldness, Not Moderation</div>
+                        <div class="big-article-info grey bold font-inc">BY ISSAC BAILEY</div>
+                    </div>
+                    <hr class="thick">
+                </div>
+                <div class="big-article-title grey bold">OPINION</div>
+                <div>
+                    <img class="big-article-img float-left float-img fix-margins" src="https://d.newsweek.com/en/full/1595774/gordon-chang.webp?w=63&h=63&f=e6ac7c2e3f20ff658db6088a2c2ebef7">
+                    <div class="big-article-info bold font-inc orange-underline">China, the 'Victor Power,' Is Both Arrogant and Insecure</div>
+                    <div class="big-article-info grey bold font-inc">BY GORDON G. CHANG</div>
+                </div>
+                <hr class="clear">
+                <div>
+                    <img class="big-article-img float-left float-img fix-margins" src="https://d.newsweek.com/en/full/1594385/marianne-williamson.webp?w=63&h=63&f=e5673fcb9ddab3bb801cfc7a5c103a2f">
+                    <div class="big-article-info bold font-inc orange-underline">Jupiter, Saturn and the Benjamin Franklin Conjunction</div>
+                    <div class="big-article-info grey bold font-inc">BY MARIANNE WILLIAMSON</div>
+                </div>
+                <hr class="clear">
+                <div>
+                    <img class="big-article-img float-left float-img fix-margins" src="https://d.newsweek.com/en/full/1596838/eugene-kontorovich.webp?w=63&h=63&f=fabfa1033e999ecd1709b1731d886f0a">
+                    <div class="big-article-info bold font-inc orange-underline">Trump Was Right To Recognize Moroccan Sovereignty</div>
+                    <div class="big-article-info grey bold font-inc">BY EUGENE KONTOROVICH</div>
+                </div>
+                <hr class="clear">
+                <div>
+                    <img class="big-article-img float-left float-img fix-margins" src="https://d.newsweek.com/en/full/1691726/tom-rogers-susan-del-percio.webp?w=63&h=63&f=86683d718b1e6dd3263fe901ef2467f3">
+                    <div class="big-article-info bold font-inc orange-underline">A Path to Reform: Make McConnell a Teammate</div>
+                    <div class="big-article-info grey bold font-inc">BY TOM ROGERS AND SUSAN DEL PERCIO</div>
+                </div>
+                <hr class="clear">
+                <div>
+                    <img class="big-article-img float-left float-img fix-margins" src="https://d.newsweek.com/en/full/1646800/josh-hammer.webp?w=63&h=63&f=cd14b8675c99d70b0e9c9d28906c5d29">
+                    <div class="big-article-info bold font-inc orange-underline">It Can't Get Any Worse Than 2020. Here's a 2021 Political Wish List</div>
+                    <div class="big-article-info grey bold font-inc">BY JOSH HAMMER</div>
+                </div>
+                <hr class="clear">
+                <div>
+                    <img class="big-article-img float-left float-img fix-margins" src="https://d.newsweek.com/en/full/1600072/kristen-waggoner.webp?w=63&h=63&f=8ca56b260e65bcdaa45673d3df0fbb97">
+                    <div class="big-article-info bold font-inc orange-underline">Georgia Voters Have the Chance to Shape National Decisions</div>
+                    <div class="big-article-info grey bold font-inc">BY KRISTEN WAGGONER</div>
+                </div>
+                <hr class="clear">
+                <div>
+                    <img class="big-article-img float-left float-img fix-margins" src="https://d.newsweek.com/en/full/1635238/rick-santorum.webp?w=63&h=63&f=07493b423202f003116e85640dfacfad">
+                    <div class="big-article-info bold font-inc orange-underline">Why Joe Biden Should Reject Cancel Culture</div>
+                    <div class="big-article-info grey bold font-inc">BY RICK SANTORUM</div>
+                </div>
+                <div class="newsletter-sign-up clear">
+                    <div class="newsletter-title">
+                        <span class="n-logo float-left n-logo-margins"></span>
+                        <span class="bold">START YOUR DAY WITH OUR TOP 5 ARTICLES</span>
+                    </div>
+                    <div class="newsletter-info">
+                        <input class="newsletter-input" type="text" placeholder="Email address">
+                    </div>
+                    <div class="newsletter-btn"></div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <span class="n-logo"></span>
+            <span class="bold">IN THE MAGAZINE</span>
+        </div>
+        <hr>
+        <div class="magazines row">
+            <!-- magazines -->
+            <div class="col-md-3">
+                <div>
+                    <img class="magazine-img" src="https://d.newsweek.com/en/full/1690510/cover-january-01-08-2021.webp?w=290&h=387&q=90&f=09dee307b403c8200f6731de12f5db05">
+                </div>
+                <div>
+                    <img class="magazine-img" src="https://d.newsweek.com/en/full/1688376/ireland-border.webp?w=466&h=311&q=90&f=c0a93ac6912eb603cff1c816e2f9862c">
+                    <div class="bold">Thanks to Brexit, A New, United Ireland is Within Reach</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <img class="magazine-img" src="https://d.newsweek.com/en/full/1689207/fe-happiness-banner.webp?w=466&h=311&q=90&f=1364d46104ff4ea834afb1150b0d8997">
+                    <div class="bold">Laurie Santos, Yale happiness prof, on 5 things that will make you happier</div>
+                </div>
+                <div>
+                    <img class="magazine-img" src="https://d.newsweek.com/en/full/1689123/fe-21-things-banner.webp?w=466&h=311&l=91&t=50&q=90&f=7b21fa0d88b03a8a472c275a33f3163f">
+                    <div class="bold">21 Things to Look Forward to in 2021</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <img class="magazine-img" src="https://d.newsweek.com/en/full/1689123/fe-21-things-banner.webp?w=466&h=311&l=91&t=50&q=90&f=7b21fa0d88b03a8a472c275a33f3163f">
+                    <div class="bold">21 Things to Look Forward to in 2021<br><br></div>
+                </div>
+                <div>
+                    <img class="magazine-img" src="https://d.newsweek.com/en/full/1686359/cul-map-wackyholidays-banner.webp?w=466&h=311&l=54&t=71&q=90&f=6bc68c4b050a7374d4e43fe1cb5d291e">
+                    <div class="bold">Wacky Ways the Holidays Are Celebrated Around the World</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <img class="magazine-img" src="https://d.newsweek.com/en/full/1687597/2021-sign.webp?w=466&h=311&q=90&f=98eeea4c1d99509b85534937c2359b5b">
+                    <div class="bold">12 Scientifically Proven Ways to Succeed at Your New Year's Resolutions</div>
+                </div>
+                <div>
+                    <img class="magazine-img" src="https://d.newsweek.com/en/full/1689123/fe-21-things-banner.webp?w=466&h=311&l=91&t=50&q=90&f=7b21fa0d88b03a8a472c275a33f3163f">
+                    <div class="bold">21 Things to Look Forward to in 2021</div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <span class="n-logo"></span>
+                <span class="bold">EDITOR'S PICK</span>
+            </div>
+            <hr>
+        </div>
+        <div class="editors-pick row">
+            <!-- editors pick -->
+            <div class="col-md-3">
+                <div>
+                    <img class="editor-img" src="https://d.newsweek.com/en/full/1693269/nashville-blast-injures-3-shatters-buildings.webp?w=397&h=265&f=c6944cb290cd0e22234811506a7451a2">
+                    <div class="bold">Nashville Blast Injures 3, Shatters Buildings, Blows Hydrants</div>
+                    <div>An explosion believed to be an "intentional act" occurred in downtown Nashville on Christmas morning.</div>
+                </div>
+                <div>
+                    <img class="editor-img" src="https://d.newsweek.com/en/full/1693222/white-island-volcano-lawsuit-royal-carribean.webp?w=397&h=265&f=8a768f148ea38117c62c645503caa06d">
+                    <div class="bold">Royal Caribbean Cruises Sues Victims of Volcano Eruption To Stop Lawsuit</div>
+                    <div>One piece of litigation described Royal Caribbean's decision to allow visitors to the volcanic island "so reckless that it should not be tolerated in civilized society."</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <img class="editor-img" src="https://d.newsweek.com/en/full/1693278/saudi-crown-prince.webp?w=397&h=265&f=ee7d81922102e8b04636565dbae190ff">
+                    <div class="bold">Saudi Crown Prince Mohammed Gets COVID-19 Vaccine</div>
+                    <div>Prince Mohammed bin Salman's broadcasted vaccination came after several other political leaders were given...</div>
+                </div>
+                <div>
+                    <img class="editor-img" src="https://d.newsweek.com/en/full/1693276/tommy-tuberville.webp?w=397&h=265&f=ce06f7e8808ce5a9045ccd8a62da689b">
+                    <div class="bold">GOP Senators Stand Against Tuberville Challenging Electoral College Results</div>
+                    <div>Tuberville previously said that he would challenge the results of the 2020 election when Congress meets to confirm the vote on January 6.</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <img class="editor-img" src="https://d.newsweek.com/en/full/1692848/covid-vaccine-pfizer-coronavirus-getty.webp?w=397&h=265&f=43ea6c5cac592eee805bd454311fd4b4">
+                    <div class="bold">COVID Vaccine Causing More Allergies Than Expected Says Moncef Slaoui</div>
+                    <div>But such incident are rare and experts say the benefits of getting the vaccine far outweigh the risks.</div>
+                </div>
+                <div>
+                    <img class="editor-img" src="https://d.newsweek.com/en/full/1693271/nashville-explosion.webp?w=397&h=265&f=fbd005908780efff613c5a07a473fb44">
+                    <div class="bold">After Nashville Blast, AT&T Reports Major Service Outage on Emergency Lines</div>
+                    <div>By noon on Friday, users around the country reported a disruption in service, with a particular concentration in the Nashville area and Middle Tennessee.</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <img class="editor-img" src="https://d.newsweek.com/en/full/1693274/senator-roy-blunt.webp?w=397&h=265&f=dda7b4af8953c9c279939e186a624d15">
+                    <div class="bold">'A Mistake': Top GOP Senator Warns Trump Over $2,000 Stimulus Checks<br><br></div>
+                    <div>'A Mistake': Top GOP Senator Warns Trump Over $2,000 Stimulus Checks</div>
+                </div>
+                <div>
+                    <img class="editor-img" src="https://d.newsweek.com/en/full/1693279/sidney-powell-2020-election-donald-trump.webp?w=397&h=265&f=c08e5e533baa2da0bda3e5be6699fded">
+                    <div class="bold">Who Is Terpsichore Maras-Lindeman, Powell Witness And Pro-Trump Podcaster?</div>
+                    <div>Maras-Lindeman described herself as a "private contractor with experience gathering and analyzing foreign intelligence" in an affidavit.</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="us row">
+            <!-- US -->
+            <div class="newsbox-title orange">U.S.</div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://d.newsweek.com/en/full/1693129/david-perdue-jon-ossoff-election-polls-runoff.webp?w=397&h=265&l=52&t=30&f=5d8997db7a4b64201f6b955e708dffa3">
+                <div class="bold">What Polls Say About David Perdue and Jon Ossoff 1 Week Before Ga. Election</div>
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://d.newsweek.com/en/full/1693318/anti-tank-weapon.webp?w=397&h=265&f=50656c3840803ccab65aa179b4d0d1ca">
+                <div class="bold">Police Find Anti-Tank Weapon in Abandoned Car on Christmas Morning</div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex bold">
+                    <img class="small-newsbox-img float-left" src="https://d.newsweek.com/en/full/1693311/mega-millions.webp?w=397&h=265&f=1b524023fd8c1e9f6ee3de317b086888">
+                    <div>Mega Millions Results for 12/25/20: Did Anyone Win the $352 Million?</div>
+                </div>
+                <hr>
+                <div class="d-flex bold">
+                    <img class="large-newsbox-img float-left" src="https://d.newsweek.com/en/full/1691736/walmart-new-jersey-august-2020.webp?w=95&h=95&f=a8ffe17e6b8d9f78d9721f09cbf477a3">
+                    <div>2020 Holiday Return Policies for Walmart, Best Buy, Target, Costco and More</div>
+                </div>
+                <hr>
+                <div class="d-flex bold">
+                    <img class="large-newsbox-img float-left" src="https://d.newsweek.com/en/full/1693277/nashville-police-explosion-tennessee.webp?w=95&h=95&f=f44831a29e9c295d7b4f1d1a74f36ad3">
+                    <div>After blast, Nashville Deploys Bomb-Sniffing dogs, Waits For Word on Motive</div>
+                </div>
+            </div>
+            <hr class="newsbox-hr">
+        </div>
+        <div class="world row">
+            <!-- World -->
+            <div class="newsbox-title orange">World</div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://d.newsweek.com/en/full/1693315/police-us-embassy-moscow-russia.webp?w=397&h=265&f=6911f6dcf1dc485ccaf39406775f6200">
+                <div class="bold">Russia Blames U.S. for 'Visa War' That Caused Embassy Staff Shortages</div>
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://d.newsweek.com/en/full/1693034/computer-user.webp?w=397&h=265&f=0e001f450eee48250fc9c16163dde018">
+                <div class="bold">Russia Says SolarWinds Hack Blame May Be Ploy to Ruin Putin-Biden Ties</div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex bold">
+                    <img class="small-newsbox-img float-left" src="https://d.newsweek.com/en/full/1693098/brazilian-governor-joao-doria.webp?w=397&h=265&f=be508596c2b305c886a018cce7de3fb1">
+                    <div>Brazilian Gov. Celebrates Holidays in Miami After Imposing Strict Lockdowns</div>
+                </div>
+                <hr>
+                <div class="d-flex bold">
+                    <img class="large-newsbox-img float-left" src="https://d.newsweek.com/en/full/1693053/boris-johnson-celebrates-brexit-deal.webp?w=95&h=95&f=760c90a97d716edaef25eca6c1cfd21e">
+                    <div>U.K. and EU Agree Brexit Trade Deal</div>
+                </div>
+                <hr>
+                <div class="d-flex bold">
+                    <img class="large-newsbox-img float-left" src="https://d.newsweek.com/en/full/1692846/iraq-visit-irans-soleimani-successor-ghaani.webp?w=95&h=95&f=7bee00dae347c7d45615f983f7957b6d">
+                    <div>Soleimani's Successor Visits Iraq As Trump Threatens Embassy Retaliation</div>
+                </div>
+            </div>
+            <hr class="newsbox-hr">
+        </div>
+        <div class="business row">
+            <!-- Business -->
+            <div class="newsbox-title orange">Business</div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://d.newsweek.com/en/full/1687838/jon-ossoff-speaks-event.webp?w=397&h=265&f=3d77db90c6c4c9b8f562404ecfa9bdb8">
+                <div class="bold">Democrats Flood Facebook With Georgia Senate Runoff Ads After Ban Lifted</div>
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://d.newsweek.com/en/full/1686400/per-linkedin-shark.webp?w=397&h=265&l=50&t=30&f=774a74f1f7449c08d36c788e1b29a19b">
+                <div class="bold">Shark Tank's Robert Herjavec on How Small Business Owners Can Survive COVID</div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex bold">
+                    <img class="small-newsbox-img float-left" src="https://d.newsweek.com/en/full/1686886/nancy-pelosi.webp?w=397&h=265&f=937e665110eb6273947df8f52ebc77eb">
+                    <div>Second Stimulus Deal Will Spark Scramble For Businesses to Survive</div>
+                </div>
+                <hr>
+                <div class="d-flex bold">
+                    <img class="large-newsbox-img float-left" src="https://d.newsweek.com/en/full/1686736/mitch-mcconnell-briefing-press.webp?w=95&h=95&f=dffe4ee55d1c9aa7858c6413a5d70e02">
+                    <div>Either Stimulus Plan Would Fill Economic Hole Caused by COVID: Research</div>
+                </div>
+                <hr>
+                <div class="d-flex bold">
+                    <img class="large-newsbox-img float-left" src="https://d.newsweek.com/en/full/1675370/ivanka-don-jr.webp?w=95&h=95&l=50&t=50&f=fca5d0fb135a3e900e0bc8bdd854e25c">
+                    <div>Ivanka Trump, Don Jr. Slam 'Economy Destroying' Lockdownsc</div>
+                </div>
+            </div>
+            <hr class="newsbox-hr">
+        </div>
+        <div class="tech row">
+            <!-- Tech/science -->
+            <div class="newsbox-title orange">Tech/Science</div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://d.newsweek.com/en/full/1692861/venus-planet-stock-getty.webp?w=397&h=265&f=75fad143a9b26c5b3698263737f5e9f3">
+                <div class="bold">8 Incredible Scientific Discoveries in 2020</div>
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://d.newsweek.com/en/full/1692090/n95-masks-stock.webp?w=397&h=265&f=5e61021926c0ce032166d2cadacc511e">
+                <div class="bold">KN95 and N95 Masks in Stock: 11 Face Masks You Can Buy Today</div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex bold">
+                    <img class="small-newsbox-img float-left" src="https://d.newsweek.com/en/full/1691469/asteroid.webp?w=397&h=265&f=b8831ef996483ed7ae9d9fa02ca889e1">
+                    <div>Mega Millions Results for 12/25/20: Did Anyone Win the $352 Million?</div>
+                </div>
+                <hr>
+                <div class="d-flex bold">
+                    <img class="large-newsbox-img float-left" src="https://d.newsweek.com/en/full/1691441/seal-pup-rspca.webp?w=95&h=95&f=ffc7eeb483c8b6fb51be8f15a89e2718">
+                    <div>2020 Holiday Return Policies for Walmart, Best Buy, Target, Costco and More</div>
+                </div>
+                <hr>
+                <div class="d-flex bold">
+                    <img class="large-newsbox-img float-left" src="https://d.newsweek.com/en/full/1558120/facebook.webp?w=95&h=95&l=0&t=0&f=5c7d683031973bcbc10012469f51b3f6">
+                    <div>After blast, Nashville Deploys Bomb-Sniffing dogs, Waits For Word on Motive</div>
+                </div>
+            </div>
+            <hr class="newsbox-hr">
+        </div>
+        <div class="culture row">
+            <!-- Culture -->
+            <div class="newsbox-title orange">Culture</div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://d.newsweek.com/en/full/1679250/wonder-woman-1984-hbo-max.webp?w=397&h=265&f=2dfec115c0cdf0f65b95d73d57fdade2">
+                <div class="bold">What Gal Gadot and Patty Jenkins Have Said About 'Wonder Woman 3'</div>
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://d.newsweek.com/en/full/1693322/new-york-times-hq-amid-caliphate-fallout.webp?w=397&h=265&f=20002790f3c5dd1b0f84e0415e985248">
+                <div class="bold">NYT Podcast Star Pressured Media to 'Temper Their Critiques' of Caliphate</div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex bold">
+                    <img class="small-newsbox-img float-left" src="https://d.newsweek.com/en/full/1693321/daphne-simon-bridgerton.webp?w=397&h=265&f=04d13ba381b5307c1d1be3bee51f1ecc">
+                    <div>What Happens to Daphne and Simon in Netflix's 'Bridgerton'</div>
+                </div>
+                <hr>
+                <div class="d-flex bold">
+                    <img class="large-newsbox-img float-left" src="https://d.newsweek.com/en/full/1693312/wonder-woman-1984-after-credits-scene.webp?w=95&h=95&f=f159405a3f77b444960087971e238c50">
+                    <div>'Wonder Woman 1984' Credits Scene Could Set Up A Sequel</div>
+                </div>
+                <hr>
+                <div class="d-flex bold">
+                    <img class="large-newsbox-img float-left" src="https://d.newsweek.com/en/full/1693253/queen-elizabeth-ii-mi5.webp?w=95&h=95&f=13ea83a843ab4ae0ab379fd1c68207f9">
+                    <div>How Queen's Christmas Speech Dodged Prince Harry, Meghan Markle Controversy</div>
+                </div>
+            </div>
+            <hr class="newsbox-hr">
+        </div>
+        <div class="sports row">
+            <!-- Sports -->
+            <div class="newsbox-title orange">Sports</div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://d.newsweek.com/en/full/1690920/kirk-cousins-drew-brees.webp?w=397&h=265&f=69cad94f72b747de59791449de76de31">
+                <div class="bold">NFL on Christmas Day: How to Watch Saints vs Vikings on TV and Online</div>
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://d.newsweek.com/en/full/1693175/mac-jones-alabama-quarterback.webp?w=397&h=265&f=68fff766d514214274e35de9fa709b95">
+                <div class="bold">2020 Heisman Trophy Finalists Revealed, Here They Are</div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex bold">
+                    <img class="small-newsbox-img float-left" src="https://d.newsweek.com/en/full/1691215/heisman-trophy.webp?w=397&h=265&f=80d1ec88e7992a713ec8f0c4bb24f4f6">
+                    <div>How the Heisman Trophy Winner is Selected, And When The Finalists Are Named</div>
+                </div>
+                <hr>
+                <div class="d-flex bold">
+                    <img class="large-newsbox-img float-left" src="https://d.newsweek.com/en/full/1690714/clemson-quarterback-trevor-lawrence.webp?w=95&h=95&f=fe0fa333cf53e54835f7249fe1888a01">
+                    <div>Does Selecting a Quarterback With the No.1 Pick in the Draft Really Work?</div>
+                </div>
+                <hr>
+                <div class="d-flex bold">
+                    <img class="large-newsbox-img float-left" src="https://d.newsweek.com/en/full/1690886/kansas-city-chiefs-quarterback-patrick-mahomes.webp?w=95&h=95&f=bfb5566f6689e2d8d9ff22580df035bf">
+                    <div>NFL Playoff Bracket: Updated AFC, NFC Standings After Week 15</div>
+                </div>
+            </div>
+            <hr class="newsbox-hr">
+        </div>
+        <div class="ad row d-flex justify-content-around">
+            <!-- Ad -->
+            <div class="col-sm-12 col-md-6">
+                <div class="newsbox-title orange">Subscribe</div>
+                <div class="sub-box d-flex align-items-center justify-content-around">
+                    <img src="https://d.newsweek.com/en/full/1690510/cover-january-01-08-2021.jpg?w=170&q=95&f=88368c92b2a33536fd19486cff9b3ff1">
+                    <div class="sub-text">
+                        <div class="bold">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</div>
+                        <div>All Access + Weekly Delivery. Choose A Membership That's Perfect for You!</div>
+                        <button class="orange-btn bold">SUBSCRIBE ></button>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="newsbox-title orange">Newsletter</div>
+                <div class="newsletter-box d-flex">
+                    <img src="https://d.newsweek.com/en/full/1690510/cover-january-01-08-2021.jpg?w=170&q=95&f=88368c92b2a33536fd19486cff9b3ff1">
+                    <div class="simple-border">
+                        <div class="bold">The Starting 5</div>
+                        <div>See why nearly a quarter of a million subscribers begin their day with the Starting 5.</div>
+                        <input type="text" placeholder="Email Address">
+                        <button class="orange-btn bold">FREE SIGN UP></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer row d-flex">
+            <div class="footer-upper d-flex">
+                <div class="footer-logo">
+                    <span class="footer-logo-large">Newsweek</span>
+                    <span class="footer-logo-legal"><i>© 2020 NEWSWEEK DIGITAL LLC</i></span>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-lower">
+                <div class="footer-eds">
+                    <span><b>Editions:</b></span>
+                    <span class="footer-grey">U.S. Edition</span>
+                    <span class="footer-grey">日本</span>
+                    <span class="footer-grey">Pakistan</span>
+                    <span class="footer-grey">Polska</span>
+                    <span class="footer-grey">România</span>
+                </div>
+                <div class="footer-links">
+                    <span class="footer-grey"> About Us</span>
+                    <span class="footer-grey">Corrections</span>
+                    <span class="footer-grey">Contact Us</span>
+                    <span class="footer-grey">Editorial Guidelines</span>
+                    <span class="footer-grey">Advertise</span>
+                    <span class="footer-grey">Copyright</span>
+                    <span class="footer-grey">Terms & Conditions</span>
+                    <span class="footer-grey">Privacy Policy</span>
+                    <span class="footer-grey">Cookie Policy</span>
+                    <span class="footer-grey">Terms of Sale</span>
+                    <span class="footer-grey">Archive</span>
+                    <span class="footer-grey">Announcements</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>
